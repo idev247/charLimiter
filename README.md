@@ -26,11 +26,7 @@ And just add the HTML maxlength attribute for both input and textarea
 ####Creating Your Own Counter####
 If you want to create your own counter in a different position of the two possible through the `insert` you can create the place where you want the counter to appear and add the attribute `data` counter-rel in the field that you are limiting and also where the count will appear. This attribute data is what makes the connection between the two.
 
-####Criando o seu Próprio Contador####
-Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção `insert` você pode criar o lugar onde você quer que apareça o contador e adicione o atributo `data-counter-rel` no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois. Deve-se também adicionar a classe ao contador, sendo ela a **Default** ou a que você adicionar como option.
-
-
-Exemplo:
+Example:
 ```javascript
 $('#input').charLimiter();
 ```
