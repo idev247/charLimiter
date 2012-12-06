@@ -434,4 +434,10 @@ Small Device Styles
    padding: 0px;
   margin: 0;
 
+
+  box-shadow: 0 0 ;
+  -webkit-box-shadow: 0 0;
+  -moz-box-shadow: 
+  -o-box-shadow: 0;
+  -ms-box-shadow:0;
 }
