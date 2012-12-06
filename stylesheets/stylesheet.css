@@ -429,3 +429,9 @@ Small Device Styles
   }
 
 }
+#ribbon{
+  width:149px; height:149px; position: absolute; top: 0; left: 0; border: 0;
+   padding: 0px;
+  margin: 0;
+
+}
