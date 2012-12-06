@@ -73,9 +73,8 @@
 <strong>insert</strong> (default: "after"): Posição em que é inserido o contador gerado de forma automática. Valores podem ser <code>after</code> ou <code>before</code>. </li>
 </ul><h4>Criando o seu Próprio Contador</h4>
 
-<p>Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção <code>insert</code> você pode criar o lugar onde você quer que apareça o contador e adicione o atributo <code>data-counter-rel</code> no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois.</p>
-
-<p>Exemplo:</p>
+<p>Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção <code>insert</code> você pode criar o lugar onde você quer que apareça o contador e adicione o atributo <code>data-counter-rel</code> no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois.</p> Deve-se também adicionar a classe ao contador, sendo ela a <strong>Default</strong> ou a que você adicionar como option.
+<p>Exemplo com contador criado manualmente:</p>
 
 <div class="highlight"><pre><span class="nx">$</span><span class="p">(</span><span class="s1">'#input'</span><span class="p">).</span><span class="nx">charLimiter</span><span class="p">();</span>
 </pre></div>
@@ -84,10 +83,9 @@
 <span class="nt">&lt;p&gt;</span>O contador não será inserido logo após o input mas sim depois do P<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">data-counter-rel=</span><span class="s">"contador"</span><span class="nt">&gt;&lt;/span&gt;</span>
 </pre></div>
-
 <p>E então teremos o contador.</p>
 Input: <input type="text" data-counter-rel="contador" id="contador" maxlength="10" />
-<p>O Contador irá ficar abaixo</p><br/>
+<p>O Contador irá ficar abaixo</p>
 Counter: <p class="counter" data-counter-rel="contador"></p>
       </section>
     </div>
