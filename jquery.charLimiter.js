@@ -1,7 +1,7 @@
 /*
  *  Project: charLimiter
     Version: 1.0
-    Date: 19/10/2012
+    Date: 06/12/2012
  *  Description: Characters Limiter and auto generate Counter if you can.
  *  Author: Abner Soares Alves Júnior
     GitHub: https://github.com/abnersajr
