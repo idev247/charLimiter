@@ -10,9 +10,13 @@
      <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="javascripts/jquery.charLimiter.min.js"></script>   
     <script>
+    $(function(){
       $('#contador').charLimiter({
-        generateCounter : true
-      });
+        generateCounter : true,
+        counterClass : 'contadorT'
+      });  
+    })
+      
     </script>
 
     <title>Charlimiter</title>
@@ -87,6 +91,7 @@
 <p>E então teremos o contador.</p>
 <input type="text" id="contador" maxlength="10" />
 <p>O Contador irá ficar abaixo</p>
+<p class="contadorT" data-counter-rel="contador"></p>
       </section>
     </div>
 
