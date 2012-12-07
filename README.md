@@ -24,7 +24,7 @@ E no HTML basta adicionar o atributo maxlength tanto para input como textarea
 * **insert** (default: "after"): Posição em que é inserido o contador gerado de forma automática. Valores podem ser `after` ou `before`. 
 
 ####Criando o seu Próprio Contador####
-Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção `insert` você pode criar o lugar onde você quer que apareça o contador e adicione o atributo `data-counter-rel` no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois.
+Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção `insert` você pode criar o lugar onde você quer que apareça o contador e adicione o atributo `data-counter-rel` no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois. Deve-se também adicionar a classe ao contador, sendo ela a **Default** ou a que você adicionar como option.
 
 Exemplo:
 ```javascript
@@ -34,6 +34,6 @@ $('#input').charLimiter();
 ```html
 <input data-counter-rel="contador" type="text" id="input" maxlength="15" />
 <p>O contador não será inserido logo após o input mas sim depois do P</p>
-<span data-counter-rel="contador"></span>
+<span class="counter" data-counter-rel="contador"></span>
 ```
 E então teremos o contador.
