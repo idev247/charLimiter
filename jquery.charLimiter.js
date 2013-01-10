@@ -46,7 +46,7 @@
                 $('.' + s.counterClass + '[data-counter-rel="' + $(this).data('counter-rel') + '"]').html(maxChars);
             });
         }
-        $(e).on('keypress change input', function() {
+        $(e).on('keypress keyup keydown change input', function() {
             //Quantity of characters inserted.
             var len = $(this).val().length;
             //Quantity of characters remaining to max.
