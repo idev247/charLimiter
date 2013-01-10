@@ -2,6 +2,12 @@
 
 The Char Limiter is a plugin that limits the amount of characters in input and textarea, with the option of generating an automatic counter or you can create the counter and inform its class.
 
+##Changelog##
+
+* V 1.1
+* Date: 10/01/2013
+* Added two Callbacks. `onCharsFull()` e `onCharsEmpty()`.
+
 ##Dependencies##
 
 * [jQuery 1.7+](http://jquery.com/download/)
