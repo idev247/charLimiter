@@ -21,7 +21,9 @@ And just add the HTML maxlength attribute for both input and textarea
 ###Options###
 * **counterClass** (default: "counter"): Class counter. Only class as selector.
 * **generateCounter** (default: false): Generates a counter, automatic, if `true`.
-* **insert** (default: "after"): Position on the counter is generated automatically inserted. Values ​​can be `after` ou `before`. 
+* **insert** (default: "after"): Position on the counter is generated automatically inserted. Values ​​can be `after` ou `before`.
+* **onCharsFull** (default: empty): Callback when all chars are typed.
+* **onCharsEmpty** (default: empty): Callback when no chars are not typed.
 
 ####Creating Your Own Counter####
 If you want to create your own counter in a different position of the two possible through the `insert` you can create the place where you want the counter to appear and add the attribute `data` counter-rel in the field that you are limiting and also where the count will appear. This attribute data is what makes the connection between the two.
