@@ -28,6 +28,8 @@ E no HTML basta adicionar o atributo maxlength tanto para input como textarea
 * **counterClass** (default: "counter"): Classe do contador. Somente classe como seletor.
 * **generateCounter** (default: false): Gera um contador automático se `true`.
 * **insert** (default: "after"): Posição em que é inserido o contador gerado de forma automática. Valores podem ser `after` ou `before`. 
+* **onCharsFull()** (default: empty): Callback quando todos caracteres são digitados.
+* **onCharsEmpty()** (default: empty): Callback quando quaisquer caracteres não foram digitado.
 
 ####Criando o seu Próprio Contador####
 Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção `insert` você pode criar o lugar onde você quer que apareça o contador e adicione o atributo `data-counter-rel` no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois.

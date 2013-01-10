@@ -80,6 +80,10 @@
 <strong>generateCounter</strong> (default: false): Generates a counter, automatic, if <code>true</code>.</li>
 <li>
 <strong>insert</strong> (default: "after"): Position on the counter is generated automatically inserted. Values ​​can be <code>after</code> ou <code>before</code>. </li>
+<li>
+<strong>onCharsFull()</strong> (default: empty): Callback when all chars are typed.</li>
+<li>
+<strong>onCharsEmpty()</strong> (default: empty): Callback when no chars are not typed.</li>
 </ul><h4>Creating Your Own Counter</h4>
 
 <p>If you want to create your own counter in a different position of the two possible through the <code>insert</code> you can create the place where you want the counter to appear and add the attribute <code>data-counter-rel</code>  counter-rel in the field that you are limiting and also where the count will appear. This attribute data is what makes the connection between the two.

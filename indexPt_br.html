@@ -79,6 +79,10 @@
 <strong>generateCounter</strong> (default: false): Gera um contador automático se <code>true</code>.</li>
 <li>
 <strong>insert</strong> (default: "after"): Posição em que é inserido o contador gerado de forma automática. Valores podem ser <code>after</code> ou <code>before</code>. </li>
+<li>
+<strong>onCharsFull()</strong> (default: empty): Callback quando todos caracteres são digitados.</li>
+<li>
+<strong>onCharsEmpty()</strong> (default: empty): Callback quando quaisquer caracteres não foram digitado.</li>
 </ul><h4>Criando o seu Próprio Contador</h4>
 
 <p>Caso você queira criar seu próprio contador, em uma posição diferente das duas possíveis através da opção <code>insert</code> você pode criar o lugar onde você quer que apareça o contador e adicione o atributo <code>data-counter-rel</code> no campo que você está limitando e também no local onde irá aparecer o contador. Esse atributo data é o que faz a ligação entre os dois.</p> Deve-se também adicionar a classe ao contador, sendo ela a <strong>Default</strong> ou a que você adicionar como option.
