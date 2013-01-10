@@ -6,7 +6,7 @@ The Char Limiter is a plugin that limits the amount of characters in input and t
 
 * V 1.1
 * Date: 10/01/2013
-* Added two Callbacks. `onCharsFull()` e `onCharsEmpty()`.
+* Added two Callbacks. `onCharsFull()` and `onCharsEmpty()`.
 
 ##Dependencies##
 
