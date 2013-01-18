@@ -25,6 +25,11 @@
             onCharsFull : function(){}, //Callback when all chars are typed
             onCharsEmpty : function(){} //Callback when no chars are not typed
         }, defaults, options);
+        
+        // Do not continue if no limit is set for the field
+        if(!s.maxChars) {
+            return;
+        }
 
         this._defaults = defaults;
         this._name = pluginName;
