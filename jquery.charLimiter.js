@@ -25,7 +25,7 @@
             maxChars: !$(e).attr('maxlength') ? $(e).data(pluginName.toLowerCase() + "-limit") : $(e).attr('maxlength'), //Get maxChars from atribute maxlength or data element (this can be independent in each elements)
             onCharsFull : function(){}, //Callback when all chars are typed
             onCharsEmpty : function(){}, //Callback when no chars are not typed
-            onCharsValid : function(){}, //Callback when within limits
+            onCharsValid : function(){}, //Callback when within limits including empty
         }, defaults, options);
         
         // Do not continue if no limit is set for the field
@@ -60,11 +60,12 @@
             var len = $(this).val().length;
             //Quantity of characters remaining to max.
             var remain = maxChars - len;
-            if (len === 0) {
-                s.onCharsEmpty(this);
-            } else if (remain <= 0) {
+            if (remain <= 0) {
                 s.onCharsFull(this);
             } else {
+                if(len === 0) {
+                    s.onCharsEmpty(this);
+                }
                 s.onCharsValid(this);
             }
             if(s.forceLimit && len > maxChars) {
