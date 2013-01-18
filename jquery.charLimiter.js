@@ -14,7 +14,8 @@
         defaults = {
             counterClass: 'counter',
             generateCounter: false,
-            insert: 'after' //'after' || 'before'
+            insert: 'after', //'after' || 'before'
+            forceLimit: true //Can user continue writing when max is reached?
         };
 
     function Plugin(element, options) {
@@ -62,7 +63,7 @@
             if (remain === 0) {
                 s.onCharsFull();
             };
-            if(len > maxChars) {
+            if(s.forceLimit && len > maxChars) {
                 var val = $(this).val();
                 $(this).val(val.substr(0, maxChars));
                 remain = 0;
