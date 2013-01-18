@@ -75,9 +75,9 @@
             //Insert Auto Counter After or Before
             outputText = s.textFormat
                                     .replace(/{r}/g, remain)
-                                    .replace(/{rs}/g, remain === 1 ? '' : 's')
+                                    .replace(/{rs}/g, remain === 1 || remain === -1 ? '' : 's')
                                     .replace(/{c}/g, len)
-                                    .replace(/{cs}/g, len === 1 ? '' : 's')
+                                    .replace(/{cs}/g, len === 1 || remain === -1 ? '' : 's')
                                     .replace(/{m}/g, maxChars);
             if(s.generateCounter === true) {
                 $(this).data('sp').html(outputText);
