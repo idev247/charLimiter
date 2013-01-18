@@ -60,10 +60,10 @@
             //Quantity of characters remaining to max.
             var remain = maxChars - len;
             if (len === 0) {
-                s.onCharsEmpty();
+                s.onCharsEmpty(this);
             };
             if (remain === 0) {
-                s.onCharsFull();
+                s.onCharsFull(this);
             };
             if(s.forceLimit && len > maxChars) {
                 var val = $(this).val();
