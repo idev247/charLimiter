@@ -21,7 +21,7 @@
         var e = this.element = element;
         var s = this.options = $.extend({
 
-            maxChars: $(e).attr('maxlength'), //Get maxChars from atribute maxlength, this can be independent in each elements.
+            maxChars: !$(e).attr('maxlength') ? $(e).data(pluginName.toLowerCase() + "-limit") : $(e).attr('maxlength'), //Get maxChars from atribute maxlength or data element (this can be independent in each elements)
             onCharsFull : function(){}, //Callback when all chars are typed
             onCharsEmpty : function(){} //Callback when no chars are not typed
         }, defaults, options);
