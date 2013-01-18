@@ -14,7 +14,7 @@
         defaults = {
             counterClass: 'counter',
             generateCounter: false,
-            insert: 'after'
+            insert: 'after' //'after' || 'before'
         };
 
     function Plugin(element, options) {
