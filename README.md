@@ -32,6 +32,7 @@ And just add the HTML maxlength attribute for both input and textarea
 * **textFormat** (default "{r}"): What should be written in the counter? Possible tags: r = remaining, c = count, m = maxlength, rs = plurialize {r}, cs = plurialize {c}
 * **onCharsFull** (default: empty): Callback when all chars are typed.
 * **onCharsEmpty** (default: empty): Callback when no chars are not typed.
+* **onCharsValid** (default: empty): Callback when within limits.
 
 ####Creating Your Own Counter####
 If you want to create your own counter in a different position of the two possible through the `insert` you can create the place where you want the counter to appear and add the attribute `data` counter-rel in the field that you are limiting and also where the count will appear. This attribute data is what makes the connection between the two.
@@ -54,7 +55,14 @@ $('#input').charLimiter();
 $('input, textarea').charLimiter({
   generateCounter: true,
   forceLimit: false,
-  textFormat: "You wrote {c} char{cs} out of a limit of {m} characters. You have {r} character{rs} left."
+  textFormat: "You wrote {c} char{cs} out of a limit of {m} characters. You have {r} character{rs} left.",
+  onCharsFull: function(e) {
+    $(e).next().css('color', 'red');
+  }, onCharsValid: function(e) {
+    $(e).next().css('color', 'black');
+  }, onCharsEmpty: function(e) {
+    $(e).next().css('color', 'green');
+  }
 });
 ```
 
